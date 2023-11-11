@@ -1,0 +1,18 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "New Jekyll Project",
+      "type": "shell",
+      "command": "jekyll new ."
+    },
+    {
+      "label": "Start Jekyll Server",
+      "type": "shell",
+      "command": "bundle exec jekyll serve -l",
+      "isBackground": true
+    }
+  ]
+}
