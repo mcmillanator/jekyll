@@ -3,7 +3,10 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"postStartCommand": "bundle exec jekyll serve -l",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"installZsh": true,
